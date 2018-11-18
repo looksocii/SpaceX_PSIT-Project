@@ -13,5 +13,7 @@
 </ol>
 
 # References
-<a href="http://www.thairsc.com/">ThaiRSC</a>
-<a href="https://data.go.th/DatasetDetail.aspx?id=71aa612f-adaf-4b0d-b81b-ccdfd97efeef">Accident Data</a>
+<ul>
+    <li><a href="http://www.thairsc.com/">ThaiRSC</a></li>
+    <li><a href="https://data.go.th/DatasetDetail.aspx?id=71aa612f-adaf-4b0d-b81b-ccdfd97efeef">Accident Data</a><li>
+</ul>
