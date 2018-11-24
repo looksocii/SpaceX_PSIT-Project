@@ -110,20 +110,34 @@ def gender():
     female_list = female_list[0]
 
     # Create a graph
-    graph = pg.Line(x_labels_major_count=12, show_minor_x_labels=True, truncate_legend=40, \
+    graph = pg.Bar(x_labels_major_count=12, show_minor_x_labels=True, truncate_legend=40, \
         legend_at_bottom=False, truncate_label=100)
     # graph title
-    graph.title = 'Gender of Accident in 2015'
+    graph.title = 'อัตราผู้เกิดอุบัติเหตุแยกตามเพศในปี 2015'
     # X-Axis Label ---> (Month)
     graph.x_labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', \
     'September', 'October', 'November', 'December']
-    # Y-Axis and label ---> (Data)
+    # Y-Axis and label ---> (Gander)
     graph.add('Male', male_list)
     graph.add('Female', female_list)
     # Range of Y-Axis value
     graph.range = [1, 4000]
     # Save graph into file
-    graph.render_to_file('Gender.svg')
+    graph.render_to_file('graph_gender01.svg')
+
+    # Total All data
+    male_all = sum(male_list)
+    female_all = sum(female_list)
+
+    # Create a total graph
+    graph = pg.Pie()
+    # graph title
+    graph.title = 'อัตราผู้เกิดอุบัติเหตุแยกตามเพศในปี 2015'
+    # Variable ---> (Gander)
+    graph.add('Male', male_all)
+    graph.add('Female', female_all)
+    # Save graph into file
+    graph.render_to_file('graph_gender02.svg')
 
     #Show information
     print("Male\t:", male_list)
