@@ -89,17 +89,17 @@ def dead_admit():
     graph = pg.Line(x_labels_major_count=12, show_minor_x_labels=True, truncate_legend=40, \
         legend_at_bottom=False, truncate_label=100)
     # graph title
-    graph.title = 'Road Accident Rate in 2015'
+    graph.title = 'อัตราการเกิดอุบัติเหตุทางถนนในปี 2015'
     # X-Axis Label ---> (Month)
     graph.x_labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', \
     'September', 'October', 'November', 'December']
     # Y-Axis and label ---> (Data)
-    graph.add('Deaths', dead_list)
+    graph.add('Dead', dead_list)
     graph.add('Admit', admit_list)
     # Range of Y-Axis value
     graph.range = [1, 7000]
     # Save graph into file
-    graph.render_to_file('Dead_Admit.svg')
+    graph.render_to_file('graph_dead_admit.svg')
 
     #Show information
     print("Dead\t:", dead_list)
