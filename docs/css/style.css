@@ -1756,8 +1756,11 @@ ul.social_section_1info a:hover {
 	.navbar-nav {
 		position: relative !important;
 	}
+	.navbar-nav .nav-item:last-child a {
+		padding: 0 0 1em 0 !important;
+	}
     div#navbarSupportedContent {
-        padding: 1em 0;
+        padding: 0;
     }
     .navbar-light .navbar-toggler {
         color: #fff;
