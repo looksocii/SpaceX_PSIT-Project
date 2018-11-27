@@ -18,10 +18,10 @@ def gender():
     data_list = []
     for i in range(0, len(table)):
         # ----------> Check Year <----------
-        if table[i][2] == "15":
+        if table[i][4] == "15":
             num += 1
-            data_list.append([table[i][1], table[i][2], table[i][3], table[i][4], \
-                table[i][5], table[i][6]])
+            data_list.append([table[i][3], table[i][4], table[i][6], table[i][7], \
+                table[i][17], table[i][18]])
 
     # Male Variable
     male_list = []
@@ -97,13 +97,13 @@ def gender():
             else:
                 female_month12 += 1
 
-    # 12 Month in list
+    # 12 Month in male_list
     # male_list = [xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx]
     male_list.append([male_month1, male_month2, male_month3, male_month4, male_month5, \
     male_month6, male_month7, male_month8, male_month9, male_month10, male_month11, male_month12])
     male_list = male_list[0]
 
-    # 12 Month in list
+    # 12 Month in female_list
     # female_list = [xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx, xxx]
     female_list.append([female_month1, female_month2, female_month3, female_month4, female_month5, \
     female_month6, female_month7, female_month8, female_month9, female_month10, female_month11, female_month12])
@@ -111,7 +111,7 @@ def gender():
 
     # Create a graph
     graph = pg.Bar(x_labels_major_count=12, show_minor_x_labels=True, truncate_legend=40, \
-        legend_at_bottom=False, truncate_label=100)
+    legend_at_bottom=False, truncate_label=100)
     # graph title
     graph.title = 'อัตราผู้เกิดอุบัติเหตุแยกตามเพศในปี 2015'
     # X-Axis Label ---> (Month)
