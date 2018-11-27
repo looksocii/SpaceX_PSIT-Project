@@ -242,14 +242,6 @@ header {
 
 /*-- banner --*/
 
-#home {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/bangkok.jpg);
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
 
 .banner .banner-info p {
 	font-size: 1.5em;
@@ -289,13 +281,29 @@ header {
     color: #fff;
 }
 
+#home {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/bangkok.jpg);
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 section.banner {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/bangkok.jpg);
 	 background-attachment: fixed;
-    background-position: bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  #home,
+  .section.banner {
+  background-attachment: scroll !important;
+  }
 }
 
 section.banner .container {
