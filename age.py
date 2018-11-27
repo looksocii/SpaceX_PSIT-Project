@@ -18,10 +18,10 @@ def age():
     data_list = []
     for i in range(0, len(table)):
         # ----------> Check Year <----------
-        if table[i][2] == "15":
+        if table[i][4] == "15":
             num += 1
-            data_list.append([table[i][1], table[i][2], table[i][3], table[i][4], \
-                table[i][5], table[i][6]])
+            data_list.append([table[i][3], table[i][4], table[i][6], table[i][7], \
+                table[i][17], table[i][18]])
 
     # Age Variable
     age_all = []
@@ -33,12 +33,13 @@ def age():
         if int(i[5]) < 112:
             age_all.append(int(i[5]))
 
+    # Frequency Check
     age = histogram(age_all)[0]
     his = histogram(age_all)[1]
 
     # Create a graph
     graph = pg.Bar(show_minor_x_labels=False, truncate_legend=40, \
-        legend_at_bottom=True, truncate_label=100)
+    legend_at_bottom=True, truncate_label=100)
     # graph title
     graph.title = 'ความถี่อายุของผู้ที่เกิดอุบัติเหตุทางถนนในปี 2015'
     # X-Axis Label ---> (Age)
