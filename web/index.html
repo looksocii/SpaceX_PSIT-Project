@@ -40,7 +40,7 @@
     <!-- mian-content -->
     <div class="main-content" id="home">
         <!-- header -->
-        <header class="py-1">
+        <header class="py-0">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <h1>
@@ -422,7 +422,7 @@
             $(".scroll").click(function(event) {
                 event.preventDefault();
                 $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
+                    scrollTop: $(this.hash).offset().top -78
                 }, 1000);
             });
         });
