@@ -1,5 +1,5 @@
 # Road Accident
-<img src="https://i.ytimg.com/vi/8gIjcKj6IGg/maxresdefault.jpg" width="800"><br>
+<img src="https://i.ytimg.com/vi/8gIjcKj6IGg/maxresdefault.jpg"><br>
 
 # About The Project
 <p>Project นี้เป็นนำสถิติการเกิดอุบัติเหตุทางถนนของประเทศไทยในปี 2015 มาวิเคราะห์เพื่อรณรงค์ป้องกันและลดการเกิดอุบัติเหตุ เช่น อุบัติเหตุเกี่ยวกับรถยนต์และรถจักรยานยนต์ รวมถึงจำนวนผู้เสียชีวิตและผู้ได้รับบาดเจ็บ แสดงผลออกมาเป็นวิเคราะห์ข้อมูลและกราฟ</p>
