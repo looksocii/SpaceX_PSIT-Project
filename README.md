@@ -4,7 +4,7 @@
 # About The Project
 <p>Project นี้เป็นนำสถิติการเกิดอุบัติเหตุทางถนนของประเทศไทยในปี 2015 มาวิเคราะห์เพื่อรณรงค์ป้องกันและลดการเกิดอุบัติเหตุ เช่น อุบัติเหตุเกี่ยวกับรถยนต์และรถจักรยานยนต์ รวมถึงจำนวนผู้เสียชีวิตและผู้ได้รับบาดเจ็บในแต่ละเดือน อายุและเพศของผู้เกิดอุบัติเหตุทางถนน จัดเรียงข้อมูลรวบรวมข้อมูลวิเคราะห์ข้อมูลแล้วแสดงผลออกมาในรูปแบบของกราฟต่างๆ</p>
 
-<h3>Website : <a href="https://61070139.github.io/SpaceX_PSIT-Project">https://61070139.github.io/SpaceX_PSIT-Project</a></h3>
+<h3>Website : <a href="https://looksocii.github.io/SpaceX_PSIT-Project/">https://looksocii.github.io/SpaceX_PSIT-Project/</a></h3>
 <h3>Youtube : <a href="https://youtu.be/JxeQVCnUAMU">https://youtu.be/JxeQVCnUAMU</a></h3>
 
 # Team Space X
